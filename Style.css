@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Abyssinica SIL", serif;
+    box-sizing: border-box;
+}
+.home-section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, black 70%,#ff9000 30%);
+}
+
+/*nav section start*/
+#navbar{
+    background: linear-gradient(90deg, black 70%,#ff9000 30%); 
+}
+#logo{
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff9000;
+    letter-spacing: 2px;
+}
+.navbar-nav{
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.nav-item .nav-link{
+    margin-left: 0px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+    color: #ff9000;
+}
+.btn-cv{
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 5px;
+}
+@media screen and (max-width:768px){
+    .btn-cv{
+        border: 2px solid #ff9000;
+        color: #ff9000;
+    }
+}
+/*nav section end*/
+
+
+
+
+/*home section start*/
+.home{
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 400px; 
+}
+.home .img img{
+    width: 96.8%;
+    margin-left: 20px;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 35px;
+}
+.home .content h5{
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.home .content h3{
+    color: #fff;
+    font-size: 50px;
+}
+.home .content h3 span{
+    color: #ff9000;
+    font-weight: bold;
+}
+.changetext::after{
+    content: '';
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff9000;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: 'Web Designer';}
+    20%{content: 'Web Developer';}
+    40%{content: 'Grapic Designer';}
+    60%{content: 'Mobile App Developer';}
+    80%{content: 'Android App Developer';}
+    100%{content: 'Bootstrap web Designer';}
+}
+.home .content p{
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.btn1{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #ff9000;
+    color: #ff9000;
+    background: transparent;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    margin-top: 10px;
+}
+.btn1:hover{
+    background: #ff9000;
+    color: #000;
+    width: 160px;
+}
+@media screen and (max-width:768px){
+    .home-section{
+        background: #000;
+        height: 200vh;
+    }
+    #navbar{
+        background: #000;
+    }
+}
+@media screen and (max-width:500px){
+    .home-section{
+        background: #000;
+        height: 200vh;
+    }
+    #navbar{
+        background: #000;
+    }
+}
+
+/*home section start*/
+
+/*about section start*/
+#about{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    align-items: center;
+    display: flex;
+}
+
+#about .card img{
+    background:#ff9000;
+    border: 2px solid #ff9000;
+    
+}
+#about h3{
+    font-weight: bold;
+    border-bottom: 2px solid #ff9000;
+    color: #fff;
+    letter-spacing: 1px;
+    width: 160px;
+}
+#about h5{
+    color: #fff;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+#about p{
+    color: #fff;
+}
+#about h2{
+    font-size: 17px;
+    color: #fff;
+}
+#about h2 span{
+    color: #ff9000;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+ #about .btn2{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    color: #ff9000;
+    background: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    margin-top: 10px;
+}
+#about .btn2:hover{
+    border: 2px solid #ff9000;
+    background: #ff9000;
+    color: #000;
+    width: 160px;
+}
+@media screen and (max-width:767px){
+    #about{
+        height: 180vh;
+    }
+}
+@media screen and (max-width:500px){
+    #about{
+        height: 150vh;
+    }
+}
+
+/*about section end*/
+
+
+/*services section start*/
+#service{
+    width: 100%;
+    background-color: #000;
+    
+}
+#service h3{
+    width: 130px;
+    padding-top: 80px;
+    border-bottom: 2px solid #ff9000;
+    color: #fff;
+}
+#service .pp{
+    color: #fff;
+}
+#service .card img{
+    height: 150px;
+    border: none;
+    border-radius: 10px;
+}
+#service .card{
+    background: #ff9000;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+#service .card:hover{
+    box-shadow: 0px 4px 12px #ff9000;
+    cursor: pointer;
+}
+#service .card-body h2{
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+/*services section end*/
+
+
+.hr{
+    width: 100%;
+    height: 1px;
+    background:#ff9000;
+}
+
+/*resume section start*/
+#resume{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+#resume h5{
+    color: #ff9000;
+    padding-top: 60px;
+}
+#resume h1{
+    color: #fff;
+}
+#resume h3 i{
+    color: #ff9000;
+}
+#resume h3{
+    color: #fff;
+    border-bottom: 2px solid #ff9000;
+    width: 170px;
+}
+#resume h2{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+#resume p{
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#resume i{
+    color: #ff9000;
+}
+@media screen and (max-width:767px){
+    #resume{
+        height: 155vh;
+    }
+    
+}
+/*resume section start*/
+
+
+
+/*portfolio section start*/
+#portfolio{
+    width: 100%;
+    background: #000;
+    padding-bottom: 20px;
+}
+#portfolio h1{
+    padding-top: 80px;
+    color: #fff;
+}
+#portfolio p{
+    color: #fff;
+    letter-spacing: 1px;
+}
+#portfolio .card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#portfolio .card:hover{
+    transform: translateY(-10px);
+}
+/*portfolio section End*/
+
+
+/*contact section start*/
+#contact{
+    width: 100%;
+    padding-bottom: 102px;
+    background: #000;
+}
+#contact h1{
+    color: #fff;
+    border-bottom: 2px solid #ff9000;
+    width: 210px;
+    padding-top: 100px;
+}
+#contact p{
+    color: #fff;
+}
+#contact input{
+    width: 420px;
+    background: transparent;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 2px solid #ff9000
+}
+#contact::placeholder{
+    color: #fff;
+}
+#contact textarea{
+    background: transparent;
+    margin-top: 20px;
+    border: 2px solid #ff9000;
+    color: #fff;
+    width: 420px;
+    height: 90px;
+}
+.btncontact{
+    width: 420px;
+    height: 30px;
+    background: transparent;
+    color: #ff9000;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    border: 2px solid #ff9000;
+}
+#contact i{
+    color:#ff9000;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+@media screen  and (max-width:768px){
+    #contact input{
+        width: 300px;
+    }
+    .btncontact{
+        width: 300px;
+    }
+    #contact textarea{
+        width: 300px;
+    }
+}
+@media screen  and (max-width:500px){
+    #contact input{
+        width: 200px;
+    }
+    .btncontact{
+        width: 200px;
+    }
+    #contact textarea{
+        width: 200px;
+    }
+}
+/*contact section end*/
+
+
+/*footer section start*/
+#footer{
+    width: 100%;
+    background: #ff9000;
+}
+#footer h1{
+    color: #fff;
+    text-shadow: 0px 1px 1px black;
+    padding-top: 30px;
+}
+#footer p{
+    color: #fff;
+    text-shadow: 0px 1px 1px black; 
+}
+#footer i{
+    text-shadow: 0px 1px 1px black; 
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#footer .design{
+    color: #fff;
+    text-shadow: 0px 1px 1px black; 
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+/*footer section end*/
+
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    color: #fff;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    text-shadow: 0px 1px 1px black;
+}
+.arrow:hover{
+    color: #fff;
+}
